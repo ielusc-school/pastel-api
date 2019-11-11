@@ -1,0 +1,38 @@
+{
+  "name": "pastel-api",
+  "version": "1.0.0",
+  "description": "pastel api ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ielusc-school/pastel-api.git"
+  },
+  "keywords": [
+    "node",
+    "mongoose",
+    "express",
+    "api",
+    "food"
+  ],
+  "author": "ielusc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ielusc-school/pastel-api/issues"
+  },
+  "homepage": "https://github.com/ielusc-school/pastel-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.10",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
