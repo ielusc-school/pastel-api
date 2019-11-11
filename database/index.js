@@ -1,6 +1,8 @@
-const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+dotenv.config();
 
-const DBCON = 'mongodb+srv://pasteluser:pastel123@cluster0-kqvvh.mongodb.net/test?retryWrites=true&w=majority';
+const mongoose = require('mongoose');
+const DBCON = process.env.MATLAS
 
 mongoose.connect(DBCON, {
     useNewUrlParser: true,
