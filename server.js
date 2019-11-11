@@ -11,9 +11,8 @@ app.use(bodyParser.json());
 requireDir('./src/models');
 const Pastel = mongoose.model('Pastel');
 
-app.get('/', (req, res) => {
-  res.send({ message: 'hello pastel'});
-});
+// added we routes
+app.use('/api', require('./src/routes'));
 
 app.listen(port, (error) => {
   if(error) {
