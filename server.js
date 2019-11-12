@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 
 requireDir('./src/models');
 const Pastel = mongoose.model('Pastel');
+const Cliente = mongoose.model('Cliente');
 
 // added we routes
 app.use('/api', require('./src/routes'));
