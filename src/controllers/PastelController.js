@@ -8,6 +8,11 @@ module.exports = {
     return res.json(pastel);
   },
 
+  async show(req, res) {
+    const pastel = await Pastel.findById(req.params.id);
+    return res.json(pastel);
+  },
+
   async store(req, res) {
     const pastel = await Pastel.create(req.body);
     return res.json(pastel);
